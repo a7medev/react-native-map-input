@@ -8,6 +8,13 @@
     "build": "rm -rf dist && tsc",
     "prepare": "yarn build"
   },
+  "keywords": [
+    "react",
+    "react-native",
+    "react-native-maps",
+    "ios",
+    "android"
+  ],
   "repository": "git@github.com:a7med-mahmoud/react-native-map-input.git",
   "author": "Ahmed Mahmoud <a7med.mahmoud2004@gmail.com>",
   "license": "MIT",
