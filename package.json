@@ -3,8 +3,10 @@
   "version": "0.1.0",
   "description": "A React Native Component for Getting Location using a Map",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "build": "rm -rf dist && tsc"
+    "build": "rm -rf dist && tsc",
+    "prepare": "yarn build"
   },
   "repository": "git@github.com:a7med-mahmoud/react-native-map-input.git",
   "author": "Ahmed Mahmoud <a7med.mahmoud2004@gmail.com>",
