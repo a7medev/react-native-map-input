@@ -1,1 +1,1 @@
-export default 'MapInput';
+export { default } from './MapInput';

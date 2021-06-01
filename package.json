@@ -10,6 +10,14 @@
   "author": "Ahmed Mahmoud <a7med.mahmoud2004@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "@types/react": "*",
+    "@types/react-native": "*",
+    "@types/react-native-maps": "*",
     "typescript": "^4"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*",
+    "react-native-maps": ">=0.12.1"
   }
 }

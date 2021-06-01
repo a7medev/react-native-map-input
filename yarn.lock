@@ -2,6 +2,56 @@
 # yarn lockfile v1
 
 
+"@types/geojson@^7946.0.7":
+  version "7946.0.7"
+  resolved "https://registry.yarnpkg.com/@types/geojson/-/geojson-7946.0.7.tgz#c8fa532b60a0042219cdf173ca21a975ef0666ad"
+  integrity sha512-wE2v81i4C4Ol09RtsWFAqg3BUitWbHSpSlIo+bNdsCJijO9sjme+zm+73ZMCa/qMC8UEERxzGbvmr1cffo2SiQ==
+
+"@types/prop-types@*":
+  version "15.7.3"
+  resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.3.tgz#2ab0d5da2e5815f94b0b9d4b95d1e5f243ab2ca7"
+  integrity sha512-KfRL3PuHmqQLOG+2tGpRO26Ctg+Cq1E01D2DMriKEATHgWLfeNDmq9e29Q9WIky0dQ3NPkd1mzYH8Lm936Z9qw==
+
+"@types/react-native-maps@*":
+  version "0.24.2"
+  resolved "https://registry.yarnpkg.com/@types/react-native-maps/-/react-native-maps-0.24.2.tgz#f88aa0b30a470066c749a2786c52aca356bd4f38"
+  integrity sha512-4nunEtRw4DoER/oagEofZkwdOVmHV2p3FvMrs6aVjVV+WlXnQWs5fIosqdeWI3OJI5SLsAL+6/HRZxGuQ0ts0Q==
+  dependencies:
+    react-native-maps "*"
+
+"@types/react-native@*":
+  version "0.64.8"
+  resolved "https://registry.yarnpkg.com/@types/react-native/-/react-native-0.64.8.tgz#6679198048581b1c33ac6050c1d46dced5e229b8"
+  integrity sha512-Jg1x3TTDTkVKu5gX1pPLKdkWqDQgDPOMP0wMG8d9br9tDITisA79zJ07o8dcPJWKETsBglHYPUQRVG2fxC2V8g==
+  dependencies:
+    "@types/react" "*"
+
+"@types/react@*":
+  version "17.0.8"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.8.tgz#fe76e3ba0fbb5602704110fd1e3035cf394778e3"
+  integrity sha512-3sx4c0PbXujrYAKwXxNONXUtRp9C+hE2di0IuxFyf5BELD+B+AXL8G7QrmSKhVwKZDbv0igiAjQAMhXj8Yg3aw==
+  dependencies:
+    "@types/prop-types" "*"
+    "@types/scheduler" "*"
+    csstype "^3.0.2"
+
+"@types/scheduler@*":
+  version "0.16.1"
+  resolved "https://registry.yarnpkg.com/@types/scheduler/-/scheduler-0.16.1.tgz#18845205e86ff0038517aab7a18a62a6b9f71275"
+  integrity sha512-EaCxbanVeyxDRTQBkdLb3Bvl/HK7PBK6UJjsSixB0iHKoWxE5uu2Q/DgtpOhPIojN0Zl1whvOd7PoHs2P0s5eA==
+
+csstype@^3.0.2:
+  version "3.0.8"
+  resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.0.8.tgz#d2266a792729fb227cd216fb572f43728e1ad340"
+  integrity sha512-jXKhWqXPmlUeoQnF/EhTtTl4C9SnrxSH/jZUih3jmO6lBKr99rP3/+FmrMj4EFpOXzMtXHAZkd3x0E6h6Fgflw==
+
+react-native-maps@*:
+  version "0.28.0"
+  resolved "https://registry.yarnpkg.com/react-native-maps/-/react-native-maps-0.28.0.tgz#1913dd4977652ddfc317d39c7cb7d78a8e513784"
+  integrity sha512-F+k5ZT9hhl+iXR1H+5ZcoHOEB5lPu9gCIwtA4lI/LoI9nfa9xFvr1vMiLIv44jzeGNzbE3+/R81IpcNDMJ5uDg==
+  dependencies:
+    "@types/geojson" "^7946.0.7"
+
 typescript@^4:
   version "4.3.2"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.3.2.tgz#399ab18aac45802d6f2498de5054fcbbe716a805"
