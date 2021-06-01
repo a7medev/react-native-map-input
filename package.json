@@ -3,7 +3,13 @@
   "version": "0.1.0",
   "description": "A React Native Component for Getting Location using a Map",
   "main": "dist/index.js",
+  "scripts": {
+    "build": "rm -rf dist && tsc"
+  },
   "repository": "git@github.com:a7med-mahmoud/react-native-map-input.git",
   "author": "Ahmed Mahmoud <a7med.mahmoud2004@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4"
+  }
 }
