@@ -39,7 +39,7 @@ This package requires [react-native-maps](https://github.com/react-native-maps/r
        <MapInput
          region={coordinate}
          onChange={setCoordinate}
-       />;
+       />
        // ...
      );
    };
