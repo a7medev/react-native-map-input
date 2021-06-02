@@ -2,6 +2,22 @@
 
 > A React Native Component for Getting Location using a Map
 
+### Installation
+
+It's really simple, just run:
+
+```sh
+yarn add react-native-map-input
+```
+
+or
+
+```sh
+npm install react-native-map-input --save
+```
+
+This package requires [react-native-maps](https://github.com/react-native-maps/react-native-maps) to be installed and configured to work correctly, follow these [instructions](https://github.com/react-native-maps/react-native-maps/blob/master/docs/installation.md) on how to install it.
+
 ### Example
 
 ```jsx
