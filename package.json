@@ -1,6 +1,6 @@
 {
   "name": "react-native-map-input",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "A React Native Component for Getting Location using a Map",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -17,7 +17,8 @@
     "android"
   ],
   "files": [
-    "dist/**"
+    "dist/**",
+    "FormikMapInput/**"
   ],
   "homepage": "https://github.com/a7med-mahmoud/react-native-map-input#readme",
   "bugs": {

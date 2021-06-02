@@ -1,0 +1,5 @@
+{
+  "main": "../dist/FormikMapInput",
+  "module": "../dist/FormikMapInput",
+  "types": "../dist/FormikMapInput.d.ts"
+}
