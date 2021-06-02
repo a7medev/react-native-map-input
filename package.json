@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "rm -rf dist && tsc",
+    "build": "rimraf dist && tsc",
     "prepare": "yarn build"
   },
   "keywords": [
@@ -32,10 +32,11 @@
     "@types/react": "*",
     "@types/react-native": "*",
     "@types/react-native-maps": "*",
+    "formik": ">=2.0.1",
+    "rimraf": "^3.0.2",
     "typescript": "^4"
   },
   "peerDependencies": {
-    "formik": ">=2.0.1",
     "react": "*",
     "react-native": "*",
     "react-native-maps": ">=0.12.1"
