@@ -49,6 +49,7 @@ This package requires [react-native-maps](https://github.com/react-native-maps/r
 
    ```jsx
    import React from 'react';
+   import { Formik } from 'formik';
    import { FormikMapInput } from 'react-native-map-input';
 
    const initialValues = {
