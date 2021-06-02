@@ -16,6 +16,14 @@
     "ios",
     "android"
   ],
+  "files": [
+    "dist/**"
+  ],
+  "homepage": "https://github.com/a7med-mahmoud/react-native-map-input#readme",
+  "bugs": {
+    "url": "https://github.com/a7med-mahmoud/react-native-map-input/issues",
+    "email": "a7med.mahmoud2004@gmail.com"
+  },
   "repository": "git@github.com:a7med-mahmoud/react-native-map-input.git",
   "author": "Ahmed Mahmoud <a7med.mahmoud2004@gmail.com>",
   "license": "MIT",
