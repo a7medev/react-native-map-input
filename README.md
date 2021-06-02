@@ -2,7 +2,7 @@
 
 > A React Native Component for Getting Location using a Map
 
-![react-native-map-input example](https://i.giphy.com/media/xiZE1J7B0bkPAO09bJ/source.gif)
+![react-native-map-input example](./example.gif)
 
 ### Installation
 
