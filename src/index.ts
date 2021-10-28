@@ -1,1 +1,1 @@
-export { default, MapInputProps } from './MapInput';
+export { default, MapInputProps, MapInputVariants } from './MapInput';

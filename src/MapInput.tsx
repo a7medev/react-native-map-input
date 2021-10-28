@@ -1,43 +1,52 @@
-import React, { useEffect, useRef } from 'react';
-import MapView, {
-  Marker,
-  MapViewProps,
-  LatLng,
-  Region
-} from 'react-native-maps';
+import React from 'react';
+import { MapViewProps, LatLng, Region } from 'react-native-maps';
+
+import MapInputByMarker from './MapInputByMarker';
+import MapInputByRegion from './MapInputByRegion';
+
+export const MapInputVariants = Object.freeze({
+  BY_REGION: 'by-region' as const,
+  BY_MARKER: 'by-marker' as const,
+});
 
 export interface MapInputProps extends MapViewProps {
   region: Region;
+  variant?: 'by-region' | 'by-marker';
+
+  /**
+   * The size of the icon in the center of the "by-region" variant map
+   *
+   * @default 50
+   */
+  targetIconSize?: number;
+
+  /**
+   * The color of the icon in the center of the "by-region" variant map
+   *
+   * @default 50
+   */
+  targetIconColor?: string;
+
+  /**
+   * A component of the icon in the center of the "by-region" variant map
+   * otherwise it will use the default icon
+   */
+  TargetIconComponent?: React.ComponentType<any>;
   onChange?: (coordinate: LatLng) => void;
 }
 
 export const MapInput: React.FC<MapInputProps> = ({
-  onChange,
-  region,
+  variant = MapInputVariants.BY_MARKER,
   ...props
 }) => {
-  const mapView = useRef<MapView>(null);
+  if (variant === MapInputVariants.BY_MARKER) {
+    return <MapInputByMarker {...props} />;
+  }
+  if (variant === MapInputVariants.BY_REGION) {
+    return <MapInputByRegion {...props} />;
+  }
 
-  useEffect(() => {
-    mapView.current?.animateCamera({
-      center: region
-    });
-  }, [region]);
-
-  return (
-    <MapView
-      {...props}
-      ref={mapView}
-      onPress={e => onChange && onChange(e.nativeEvent.coordinate)}
-      initialRegion={region}
-    >
-      <Marker
-        draggable
-        onDragEnd={e => onChange && onChange(e.nativeEvent.coordinate)}
-        coordinate={region}
-      />
-    </MapView>
-  );
+  throw new Error(`Unknown variant: ${variant}`);
 };
 
 export default MapInput;
