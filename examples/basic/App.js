@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-import MapInput from 'react-native-map-input';
+import MapInput, { MapInputVariants } from 'react-native-map-input';
 
 const App = () => {
   const [coordinate, setCoordinate] = useState({
     latitude: 37.78825,
     longitude: -122.4324,
     latitudeDelta: 0.0922,
-    longitudeDelta: 0.0421
+    longitudeDelta: 0.0421,
   });
 
   return (
@@ -17,6 +17,7 @@ const App = () => {
         <Text style={styles.text}>Longitude: {coordinate.longitude}</Text>
       </View>
       <MapInput
+        variant={MapInputVariants.BY_REGION}
         region={coordinate}
         onChange={setCoordinate}
         style={styles.map}
@@ -29,14 +30,14 @@ const styles = StyleSheet.create({
   container: {
     paddingTop: 50,
     paddingBottom: 15,
-    paddingHorizontal: 15
+    paddingHorizontal: 15,
   },
   text: {
-    fontSize: 20
+    fontSize: 20,
   },
   map: {
-    flex: 1
-  }
+    flex: 1,
+  },
 });
 
 export default App;
