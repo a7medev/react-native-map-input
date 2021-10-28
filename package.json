@@ -1,6 +1,6 @@
 {
   "name": "react-native-map-input",
-  "version": "0.2.4",
+  "version": "0.3.0",
   "description": "A React Native Component for Getting Location using a Map",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

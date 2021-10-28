@@ -1,12 +1,13 @@
-# react-native-map-input
+# React Native Map Input
 
-> A React Native Component for Getting Location using a Map
+A React Native Component for Getting Location using a Map
 
-![react-native-map-input example](./example.gif)
+<center>
+  <img src="./example-by-region.gif" style="margin-right: 20px">
+  <img src="./example-by-marker.gif">
+</center>
 
 ### Installation
-
-It's really simple, just run:
 
 ```sh
 yarn add react-native-map-input
@@ -18,7 +19,10 @@ or
 npm install react-native-map-input --save
 ```
 
-This package requires [react-native-maps](https://github.com/react-native-maps/react-native-maps) to be installed and configured to work correctly, follow these [instructions](https://github.com/react-native-maps/react-native-maps/blob/master/docs/installation.md) on how to install it.
+#### You have to install:
+
+- [react-native-maps](https://github.com/react-native-maps/react-native-maps/blob/master/docs/installation.md)
+- [react-native-svg](https://github.com/react-native-svg/react-native-svg#installation)
 
 ### Example
 
@@ -26,14 +30,14 @@ This package requires [react-native-maps](https://github.com/react-native-maps/r
 
    ```jsx
    import React, { useState } from 'react';
-   import MapInput from 'react-native-map-input';
+   import MapInput, { MapInputVariant } from 'react-native-map-input';
 
    const MyForm = () => {
      const [coordinate, setCoordinate] = useState({
        latitude: 37.78825,
        longitude: -122.4324,
        latitudeDelta: 0.0922,
-       longitudeDelta: 0.0421
+       longitudeDelta: 0.0421,
      });
 
      return (
@@ -41,6 +45,7 @@ This package requires [react-native-maps](https://github.com/react-native-maps/r
        <MapInput
          region={coordinate}
          onChange={setCoordinate}
+         variant={MapInputVariants.BY_REGION} {/* or BY_MARKER if you want */}
        />
        // ...
      );
@@ -60,13 +65,13 @@ This package requires [react-native-maps](https://github.com/react-native-maps/r
        latitude: 37.78825,
        longitude: -122.4324,
        latitudeDelta: 0.0922,
-       longitudeDelta: 0.0421
-     }
+       longitudeDelta: 0.0421,
+     },
      // ...
    };
 
    const MyForm = () => {
-     const handleSubmit = data => {
+     const handleSubmit = (data) => {
        console.log(data.location);
      };
 
@@ -74,7 +79,10 @@ This package requires [react-native-maps](https://github.com/react-native-maps/r
        <Formik initialValues={initialValues} onSubmit={handleSubmit}>
          {() => (
            // ...
-           <FormikMapInput name="location" />
+           <FormikMapInput
+             name="location"
+             variant={MapInputVariants.BY_REGION} {/* or BY_MARKER if you want */}
+           />
            // ...
          )}
        </Formik>

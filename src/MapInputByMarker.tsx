@@ -20,12 +20,16 @@ export const MapInputByMarker: React.FC<MapInputProps> = ({
     <MapView
       {...props}
       ref={mapView}
-      onPress={(e) => onChange && onChange(e.nativeEvent.coordinate)}
+      onPress={(e) =>
+        onChange && onChange({ ...region, ...e.nativeEvent.coordinate })
+      }
       initialRegion={region}
     >
       <Marker
         draggable
-        onDragEnd={(e) => onChange && onChange(e.nativeEvent.coordinate)}
+        onDragEnd={(e) =>
+          onChange && onChange({ ...region, ...e.nativeEvent.coordinate })
+        }
         coordinate={region}
       />
     </MapView>
