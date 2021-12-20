@@ -4,10 +4,10 @@ import { MapViewProps, LatLng, Region } from 'react-native-maps';
 import MapInputByMarker from './MapInputByMarker';
 import MapInputByRegion from './MapInputByRegion';
 
-export const MapInputVariants = Object.freeze({
-  BY_REGION: 'by-region' as const,
-  BY_MARKER: 'by-marker' as const,
-});
+export enum MapInputVariants {
+  BY_REGION = 'by-region',
+  BY_MARKER = 'by-marker',
+}
 
 export interface MapInputProps extends MapViewProps {
   region: Region;
